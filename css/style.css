@@ -1,0 +1,272 @@
+html {
+  background-image: url("../img/bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "montserrat", sans-serif;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: #ddd;
+  font-size: 24px;
+}
+
+h2 {
+  color: #ddd;
+  font-size: 18px;
+}
+
+h3 {
+  color: #dddddd80;
+  font-size: 2.4vh;
+}
+
+p {
+  color: #bff1d7;
+  font-size: 12px;
+}
+
+body {
+  list-style-type: none;
+}
+
+.grid {
+  display: grid;
+  grid-template-areas:
+    'image text text';
+  gap: 10px;
+  background-image: linear-gradient(to top, #33333340, #66666640);
+  padding: 10px;
+}
+
+.grid > div {
+  background-image: linear-gradient(to top, #33333380, #66666680);
+  padding: 10px 10px;
+}
+
+.item1 {grid-area: image; text-align: center;}
+.item2 {grid-area: text; text-align: left;}
+
+.head-section {
+  height: 30vh;
+}
+
+.main-section {
+  height: 70vh;
+  padding: 8vh 4vw;
+  margin: 2vh 2vw;
+}
+
+.nav-section {
+  padding: 5vh 0;
+  height: 100vh;
+}
+
+.container {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 100vh;
+}
+
+.page {
+  width: 100vw;
+  height: 100vh;
+  scroll-snap-align: start;
+}
+
+.head-banner {
+  width: 100vw;
+  height: 30vh;
+  object-fit: cover;
+  object-position: top;
+  filter: blur(4px) brightness(0.8);
+}
+
+.head-logo {
+  position: relative;
+  bottom: 20vh;
+  left: 25vw;
+  width: 50vw;
+  height: auto;
+  transform: translate(-50%, -50%);
+  filter: drop-shadow(3px 3px 3px #7c7c7c) brightness(2.0) blur(0.6px);
+}
+
+.head-slogan {
+  position: relative;
+  bottom: 20vh;
+  left: 18vw;
+  width: 45vw;
+  height: auto;
+  transform: translate(-50%, -50%);
+  filter: drop-shadow(2px 2px 2px #7c7c7c) brightness(2.0) blur(0.5px);
+}
+
+.inner-width {
+  margin: auto;
+  padding: 0 20px;
+  width: 100%;
+  max-width: 1200px;
+  overflow: hidden;
+}
+
+.main-container {
+  display: grid;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+}
+
+.main-box {
+  max-width: 100%;
+  padding: 10px;
+  margin: 5px;
+  text-align: left;
+}
+
+.section-subtitle {
+    text-align: left;
+    color: #ddd;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.section-title {
+  text-align: center;
+  color: #ddd;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+.border {
+  width: 160px;
+  height: 2px;
+  background-color: #fff;
+  margin: 40px auto;
+}
+
+.nav-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.nav-box {
+  max-width: 33.33%;
+  padding: 10px;
+  text-align: center;
+  color: #ddd;
+  cursor: pointer;
+}
+
+.nav-icon {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  border: 3px solid #fff;
+  color: #fff;
+  transform: rotate(45deg);
+  margin-bottom: 30px;
+  margin-top: 16px;
+  transition: 0.2s linear;
+}
+
+.nav-icon i{
+  line-height: 70px;
+  transform: rotate(-45deg);
+  font-size: 24px;
+}
+
+.nav-box:hover .nav-icon{
+  background-color: #fff;
+  color: #444;
+}
+
+.nav-title {
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.nav-desc {
+  font-size: 14px;
+}
+
+.bottom {
+  position: relative;
+  color: #dddddd;
+  font-size: 4vh;
+  left: 80vw;
+  top: 10vh;
+  animation-name: flt;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  color: #dddddd80;
+}
+
+.homeButton {
+  position: absolute;
+  text-align: center;
+  float: right;
+  display: block;
+  text-decoration: none;
+  top: 5vh;
+  right: 5vw;
+  color: #ddd;
+  padding: 15px;
+  transition: 0.2s linear;
+  border: 1px solid;
+  border-color: #66666680;
+  filter: drop-shadow(3px 3px 3px #333);
+}
+
+.homeButton:hover {
+  background-color: #fff;
+  color: #444;
+  border-color: inherit;
+  filter: drop-shadow(3px 3px 3px #777);
+}
+
+@keyframes flt {
+  0% {top: 10vh;}
+  50% {top: 8vh;}
+  100%: {top: 12vh;}
+}
+
+@media screen and (max-width: 960px) {
+  .nav-box {
+    max-width: 45%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav-box {
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .nav-box {
+    max-width: 100%;
+  }
+}
