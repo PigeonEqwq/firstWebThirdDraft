@@ -30,7 +30,7 @@ base.html(Base Template)
 
 [GithubLink](https://github.com/PigeonEqwq/firstWebThirdDraft)
 
-##Patchnote 3/3/2022
+## Patchnote 3/3/2022
 
 -Redesigned the layout and the UI of the index page
 
@@ -46,7 +46,7 @@ base.html(Base Template)
 
 [GithubLink](https://github.com/PigeonEqwq/firstWebSecondDraft)
 
-##Start 23/2/2022
+## Start 23/2/2022
 
 -Started working on the Project
 
