@@ -4,7 +4,7 @@ Made by 3B04 Lai Sheung Yuk, WIP.
 
 All contents are developed individually except for special mentioned.
 
-##Currently Avaliable Pages
+## Currently Avaliable Pages
 
 index.html(Homepage + Navigation)
 acti.html(Activities)
